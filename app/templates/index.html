@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+
+<h1>Olá {{ user.username }}</h1>
+<div>
+    {% for post in posts %}
+        <p>{{ post.author.username }} disse: <b>{{post.body}}</b></p>
+    {% endfor %}
+</div>
